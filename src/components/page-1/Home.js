@@ -6,7 +6,7 @@ import { Button } from './Button'
 
 function Home() {
     return (
-        <div className="section-home">
+        <div className="section-home" id='home'>
             <Navbar />
             <div className="container">
                 <div className="hero__content">

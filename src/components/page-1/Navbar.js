@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./Navbar.css"
-import {Link} from "react-router-dom"
+import { Link } from "react-scroll";
 import {MenuItems} from "./MenuItems"
 
 function Navbar() {
@@ -20,7 +20,7 @@ function Navbar() {
         <>
             <div className="navbar__container">
                 <nav className="navbar">
-                    <Link to="/">
+                    <Link to="home">
                         <img src="./images/logo-white.png" alt="Logo" className="logo" />
                     </Link>
                     <div className="menu__toggler">
@@ -30,7 +30,7 @@ function Navbar() {
                         {MenuItems.map((m)=>{
                             return(
                                 <li onClick={closeNav}>
-                                    <Link className={m.class} to={m.path}>{m.name}</Link>
+                                    <Link  activeClass="active" spy={true} smooth={true} offset={0} duration={500} className={m.class} to={m.path}>{m.name}</Link>
                                 </li>
                             )
                         })}

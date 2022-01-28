@@ -3,7 +3,7 @@ import "./Delivery.css"
 
 function Delivery() {
     return (
-        <div class="section-delivery">
+        <div class="section-delivery" id='delivery'>
             <div className="container">
                 <h1 className="page-title">GET FOOD FAST — NOT FAST FOOD.</h1>
                 <p className="page-desc">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>

@@ -5,7 +5,7 @@ import {CitiesItems} from "./CitiesItems"
 
 function Cities() {
     return (
-        <div className="section-cities">
+        <div className="section-cities" id='cities'>
             <div className="container">
                 <h1 className="page-title">WE'RE CURRENTLY IN THESE CITIES</h1>
                 <div className="cities-grid">

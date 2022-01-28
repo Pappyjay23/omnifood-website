@@ -1,27 +1,27 @@
 export const MenuItems = [
     {
         name: "Home",
-        path: "/",
+        path: "home",
         class: "nav-link"
     },
     {
         name: "Food Delivery",
-        path: "/delivery",
+        path: "delivery",
         class: "nav-link"
     },
     {
         name: "How it Works",
-        path: "/works",
+        path: "works",
         class: "nav-link"
     },
     {
         name: "Our Cities",
-        path: "/cities",
+        path: "cities",
         class: "nav-link"
     },
     {
         name: "Sign Up",
-        path: "/sign-up",
+        path: "sign-up",
         class: "nav-link"
     }
 ]

@@ -4,7 +4,7 @@ import "./Works.css"
 
 function Works() {
     return (
-        <div className="section-works">
+        <div className="section-works" id='works'>
             <div className="container">
                 <h1 className="page-title">HOW IT WORKS - SIMPLE AS 1, 2, 3</h1>
                 <div className="grid-items">

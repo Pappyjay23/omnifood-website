@@ -4,7 +4,7 @@ import Card from './Card'
 
 function SignUp() {
     return (
-        <div className="section-sign">
+        <div className="section-sign" id='sign-up'>
             <div className="container">
                 <h1 className="page-title">START EATING HEALTHY TODAY</h1>
                 <div className="sign-grid">
