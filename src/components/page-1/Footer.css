@@ -1,0 +1,80 @@
+.footer-section {
+    padding: 2rem 0;
+    background-color: #333;
+    color: #888;
+    font-weight: 300;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.footer-link, .socials {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #888;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #ddd;
+}
+
+.socials i {
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.socials .fa-facebook:hover {
+    color: rgb(51, 51, 255) ;
+}
+
+.socials .fa-twitter:hover {
+    color: rgb(41, 152, 255) ;
+}
+
+.socials .fa-google-plus:hover {
+    color: rgb(255, 41, 59) ;
+}
+
+.socials .fa-instagram:hover {
+    color: rgb(255, 41, 173) ;
+}
+
+.footer-section .copy {
+    text-align: center;
+}
+
+@media screen and (max-width:850px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .footer-links .left{
+        margin-bottom: 2rem;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .footer-link {
+        font-size: 80%;
+        margin: 0 .8rem;
+    }
+
+    .socials i {
+        font-size: 1.3rem;
+    }
+
+    .footer-section .copy {
+        font-size: 80%;
+    }
+}

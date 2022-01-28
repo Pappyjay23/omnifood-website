@@ -1,0 +1,116 @@
+.section-sign {
+    padding: 4rem 0;
+    background-color: #F4F4F4;
+}
+
+.sign-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sign-card {
+    background-color:#fff;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 300;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px #ececec;
+}
+
+.top {
+    text-align: center;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 1rem;
+}
+
+.top-title {
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.top-title-desc {
+    font-size: 3.5rem;
+    font-weight: 100;
+    color: #e67e22;
+    margin-bottom: 1rem;
+}
+
+.top-title-desc span {
+    font-size: 40%;
+}
+
+.top-desc {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.trans .top-desc {
+    color: transparent;
+}
+
+.trans li:nth-child(3){
+    color: transparent;
+}
+
+.mid {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mid ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mid ul li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.mid ul li i {
+    margin-right: .5rem;
+    color: #e67e22;
+    font-size: 60%;
+}
+
+.bottom {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1120px) {
+    .top-title {
+        font-size: 1.3rem;
+    }
+    
+    .top-title-desc {
+        font-size: 3rem;
+    }
+    
+    .top-desc {
+        font-size: 1rem;
+    }
+
+    .mid ul li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .sign-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sign-card {
+        margin-bottom: 2rem;
+    }
+}
+

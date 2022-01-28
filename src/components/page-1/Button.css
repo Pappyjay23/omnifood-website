@@ -1,0 +1,43 @@
+.btn {
+    border-radius: 40px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.btn-full {
+    background-color: #e67e22;
+    color: #fff;
+    border: 1px solid #e67e22;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-full:hover {
+    background-color: #CF6D17;
+    border: 1px solid #CF6D17;
+} 
+
+.btn-ghost:hover {
+    background-color: #CF6D17;
+    border: 1px solid #CF6D17;
+    color: #fff;
+} 
+
+.btn-medium {
+    padding: 8px 30px;
+    font-size: 1.2rem;
+}
+
+.btn-large {
+    padding: 12px 34px;
+    font-size: 1.3rem;
+}

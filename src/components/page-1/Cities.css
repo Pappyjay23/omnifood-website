@@ -1,0 +1,107 @@
+.section-cities {
+    padding: 4rem 0;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cities-grid-item {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cities-grid-item figure {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.cities-images {
+    margin-bottom: 2rem;
+}
+
+.cities-images p {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.cities-grid-item img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.cities-grid-item img:hover {
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.icons i {
+    margin-right: 1rem;
+    color: #e67e22;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.icons .fa-twitter:hover {
+    color: rgb(41, 152, 255);
+}
+
+.icons p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.social-link {
+    color: #e67e22;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #e67e22;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    transition: all 0.4s ease-in-out;
+}
+.social-link:hover {
+    color: rgb(41, 152, 255);
+    border-bottom: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .cities-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cities-grid-item {
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+
+    .cities-images p,
+    .icons p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cities-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cities-grid-item {
+        margin-bottom: 1rem;
+        width: 80%;
+    }
+}

@@ -1,0 +1,25 @@
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image-gallery figure {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    filter: brightness(60%);
+    transform: scale(1.2);
+    /* overflow: hidden; */
+    transition: all 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    filter: brightness(100%);
+    transform: scale(1.1);
+}

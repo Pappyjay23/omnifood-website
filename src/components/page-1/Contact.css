@@ -1,0 +1,112 @@
+.section-contact {
+    padding: 4rem 0;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    display: flex;
+    /* justify-content: space-between; */
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.line label {
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.line input[type="text"],
+.line input[type="email"],
+.line select,
+.line textarea{
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 50%;
+    padding: .5rem;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #d8d8d8;
+}
+
+.line select {
+    cursor: pointer;
+}
+
+.line select > option {
+    font-weight: 300;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line input[type="checkbox"]{
+    margin-right: 1rem;
+}
+
+.check span {
+    font-size: 1.2rem;
+}
+
+.line textarea {
+    height: 200px;
+}
+
+@media screen and (max-width: 900px) {
+    .line{
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .line label {
+        margin-bottom: 1rem;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .line input[type="text"],
+    .line input[type="email"],
+    .line select,
+    .line textarea {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .check {
+        justify-content: flex-start;
+    }
+
+    .check span {
+        font-size: 1rem;
+    }
+
+    .line.btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line .site-btn {
+        max-width: 120px;
+    }
+
+    .line .site-btn .btn {
+        width: 100%;
+    }
+}
