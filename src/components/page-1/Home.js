@@ -12,8 +12,8 @@ function Home() {
                 <div className="hero__content">
                     <div className="hero__content__details">
                         <h1>GOODBYE JUNK FOOD. <br /> HELLO SUPER HEALTHY MEALS.</h1>
-                        <Button buttonSize="btn-medium" buttonStyle="btn-full">I'm hungry</Button>
-                        <Button buttonSize="btn-medium" buttonStyle="btn-ghost">Show me More</Button>
+                        <Button path='sign-up' buttonSize="btn-medium" buttonStyle="btn-full">I'm hungry</Button>
+                        <Button path='delivery' buttonSize="btn-medium" buttonStyle="btn-ghost">Show me More</Button>
                     </div>
                 </div>
             </div>
