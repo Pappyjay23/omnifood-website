@@ -1,13 +1,14 @@
 import React from 'react'
 import "./Comments.css"
 import {CommentsItems} from "./CommentsItems"
+import {motion} from "framer-motion/dist/framer-motion"
 
-function Comments() {
+function Comments({fade}) {
     return (
         <div className="section-comments">
-            <div className="container">
-                <h1 className="page-title">OUR CUSTOMERS CAN'T LIVE WITHOUT US</h1>
-                <div className="comment-grid">
+            <motion.div className="container" viewport={{ once: true }}>
+                <motion.h1 initial={{opacity: 0}} whileInView={fade} className="page-title">OUR CUSTOMERS CAN'T LIVE WITHOUT US</motion.h1>
+                <motion.div initial={{opacity: 0}} whileInView={fade} className="comment-grid">
                     {CommentsItems.map(m=>{
                         return(
                             <div className="comment-items">
@@ -20,8 +21,8 @@ function Comments() {
                             </div>
                         )
                     })}
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }

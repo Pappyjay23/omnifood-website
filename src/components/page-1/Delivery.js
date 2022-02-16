@@ -1,13 +1,16 @@
 import React from 'react'
 import "./Delivery.css"
+import {motion} from "framer-motion/dist/framer-motion"
 
-function Delivery() {
+function Delivery({fade}) {
     return (
-        <div class="section-delivery" id='delivery'>
-            <div className="container">
-                <h1 className="page-title">GET FOOD FAST — NOT FAST FOOD.</h1>
-                <p className="page-desc">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
-                <div className="grid-items">
+        <div class="section-delivery" id='delivery' >
+            <motion.div className="container" viewport={{ once: true }}>
+                <motion.div initial={{opacity: 0}} whileInView={fade}>
+                    <h1 className="page-title">GET FOOD FAST — NOT FAST FOOD.</h1>
+                    <p className="page-desc">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>  
+                </motion.div>
+                <motion.div className="grid-items" initial={{opacity: 0}} whileInView={fade}>
                     <div className="grid-item">
                         <i className="fas fa-infinity"></i>
                         <h3>UP TO 365 DAYS/YEAR</h3>
@@ -28,8 +31,8 @@ function Delivery() {
                         <h3>ORDER ANYTHING</h3>
                         <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }

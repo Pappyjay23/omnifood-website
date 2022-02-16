@@ -1,13 +1,14 @@
 import React from 'react'
 import { Button } from './Button'
 import "./Contact.css"
+import {motion} from "framer-motion/dist/framer-motion"
 
-function Contact() {
+function Contact({fade}) {
     return (
         <div className="section-contact">
-            <div className="container">
-                <h1 className="page-title">We're happy to hear from you</h1>
-                <form className="contact-form">
+            <motion.div viewport={{once: true}} className="container">
+                <motion.h1 initial={{opacity: 0}} whileInView={fade} className="page-title">We're happy to hear from you</motion.h1>
+                <motion.form initial={{opacity: 0}} whileInView={fade} className="contact-form">
                     <div className="line">
                         <label>Name:</label>
                         <input type="text" placeholder="Your name.." />
@@ -40,8 +41,8 @@ function Contact() {
                         <label></label>
                         <Button>Submit</Button>
                     </div>
-                </form>
-            </div>
+                </motion.form>
+            </motion.div>
         </div>
     )
 }

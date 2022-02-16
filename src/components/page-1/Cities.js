@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Cities.css"
 import {CitiesItems} from "./CitiesItems"
+import {motion} from "framer-motion/dist/framer-motion"
 
-function Cities() {
+function Cities({fade}) {
     return (
         <div className="section-cities" id='cities'>
-            <div className="container">
-                <h1 className="page-title">WE'RE CURRENTLY IN THESE CITIES</h1>
-                <div className="cities-grid">
+            <motion.div className="container" viewport={{ once: true }}>
+                <motion.h1 initial={{opacity: 0}} whileInView={fade} className="page-title">WE'RE CURRENTLY IN THESE CITIES</motion.h1>
+                <motion.div initial={{opacity: 0}} whileInView={fade} className="cities-grid">
                        {CitiesItems.map((cd)=>{
                            return(
                                 <div className="cities-grid-item">
@@ -33,8 +34,8 @@ function Cities() {
                                 </div>
                            )
                        })}
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }

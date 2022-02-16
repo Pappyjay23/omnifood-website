@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Works.css"
+import {motion} from "framer-motion/dist/framer-motion"
 
-function Works() {
+function Works({fade}) {
     return (
         <div className="section-works" id='works'>
-            <div className="container">
-                <h1 className="page-title">HOW IT WORKS - SIMPLE AS 1, 2, 3</h1>
-                <div className="grid-items">
+            <motion.div className="container" viewport={{ once: true }}>
+                <motion.h1 initial={{opacity: 0}} whileInView={fade} className="page-title">HOW IT WORKS - SIMPLE AS 1, 2, 3</motion.h1>
+                <motion.div initial={{opacity: 0}} whileInView={fade} className="grid-items">
                     <div className="grid-item-1">
                         <figure>
                             <img src="./images/app-iPhone.png" alt="Phone App" />
@@ -41,8 +42,8 @@ function Works() {
                             </Link>
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }

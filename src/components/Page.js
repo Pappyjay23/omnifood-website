@@ -10,16 +10,22 @@ import SignUp from './page-1/SignUp'
 import Works from './page-1/Works'
 
 function Page() {
+    const fade = {
+        opacity: 1,
+        transition:{
+            duration: 1
+        }
+    }
     return (
         <div>
-            <Home />
-            <Delivery />
-            <Gallery />
-            <Works />
-            <Cities />
-            <Comments />
-            <SignUp />
-            <Contact />
+            <Home fade={fade} />
+            <Delivery fade={fade} />
+            <Gallery fade={fade} />
+            <Works fade={fade} />
+            <Cities fade={fade} />
+            <Comments fade={fade} />
+            <SignUp fade={fade} />
+            <Contact fade={fade} />
             <Footer />
 
         </div>
